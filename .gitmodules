@@ -1,0 +1,6 @@
+[submodule "ruby"]
+	path = lxconf-ruby
+	url = ../ruby/lxconf-ruby/
+[submodule "bash"]
+	path = lxconf-bash
+	url = ../bash/lxconf-bash/
