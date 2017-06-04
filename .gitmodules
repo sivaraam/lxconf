@@ -1,0 +1,6 @@
+[submodule "bash"]
+	path = bash
+	url = /mnt/Source/bash/lxconf-bash/
+[submodule "ruby"]
+	path = ruby
+	url = ../../ruby/lxconf-ruby/
