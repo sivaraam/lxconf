@@ -2,8 +2,8 @@
 	path = bash
 	url = /mnt/Source/bash/lxconf-bash/
 [submodule "ruby"]
-	path = ruby
-	url = ../../ruby/lxconf-ruby/
+	path = lxconf-ruby
+	url = ../ruby/lxconf-ruby/
 [submodule "firefox"]
 	path = firefox
 	url = ./firefox/
