@@ -4,6 +4,3 @@
 [submodule "ruby"]
 	path = lxconf-ruby
 	url = ../ruby/lxconf-ruby/
-[submodule "firefox"]
-	path = firefox
-	url = ./firefox/
