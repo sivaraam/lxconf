@@ -1,0 +1,20 @@
+The main loop of a sed script looks like this:
+
+    The next line is read from the input file and places it in the pattern space. If the end of file is found, and if there are additional files to read, the current file is closed, the next file is opened, and the first line of the new file is placed into the pattern space.
+    The line count is incremented by one. Opening a new file does not reset this number.
+    Each sed command is examined. If there is a restriction placed on the command, and the current line in the pattern space meets that restriction, the command is executed. Some commands, like "n" or "d" cause sed to go to the top of the loop. The "q" command causes sed to stop. Otherwise the next command is examined.
+    After all of the commands are examined, the pattern space is output unless sed has the optional "-n" argument. 
+
+The restriction before the command determines if the command is executed. If the restriction is a pattern, and the operation is the delete command, then the following will delete all lines that have the pattern:
+
+/PATTERN/ d
+
+If the restriction is a pair of numbers, then the deletion will happen if the line number is equal to the first number or greater than the first number and less than or equal to the last number:
+
+10,20 d
+
+If the restriction is a pair of patterns, there is a variable that is kept for each of these pairs. If the variable is false and the first pattern is found, the variable is made true. If the variable is true, the command is executed. If the variable is true, and the last pattern is on the line, after the command is executed the variable is turned off:
+
+/begin/,/end/ d
+
+Whew! That was a mouthful. If you have read carefully up to here, you should have breezed through this. You may want to refer back, because I covered several subtle points. My choice of words was deliberate.

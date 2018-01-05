@@ -1,0 +1,109 @@
+{
+  "policy": {
+    "DEFAULT": {
+      "capabilities": [
+        "frame",
+        "fetch",
+        "media"
+      ],
+      "temp": false
+    },
+    "TRUSTED": {
+      "capabilities": [
+        "script",
+        "object",
+        "media",
+        "frame",
+        "font",
+        "webgl",
+        "fetch",
+        "other"
+      ],
+      "temp": false
+    },
+    "UNTRUSTED": {
+      "capabilities": [],
+      "temp": false
+    },
+    "sites": {
+      "trusted": [
+        "192.168.206.84",
+        "http://192.168.206.84",
+        "https://en.wikipedia.org",
+        "§:wikipedia.org",
+        "https://phabricator.wikimedia.org",
+        "§:wmfusercontent.org",
+        "https://phab.wmfusercontent.org",
+        "§:mediawiki.org",
+        "embedded.fm",
+        "http://static.squarespace.com",
+        "§:squarespace.com",
+        "squarespace.com",
+        "http://fonts.gstatic.com",
+        "§:tools.wmflabs.org",
+        "https://tools.wmflabs.org",
+        "§:tools-static.wmflabs.org",
+        "https://tools-static.wmflabs.org",
+        "https://r-login.wordpress.com",
+        "§:wordpress.com",
+        "§:gravatar.com",
+        "https://0.gravatar.com",
+        "https://s0.wp.com",
+        "https://s1.wp.com",
+        "§:wp.com",
+        "§:olx.in",
+        "§:travis-ci.org",
+        "https://cdn.travis-ci.org",
+        "https://travis-ci.org",
+        "https://fonts.gstatic.com",
+        "172.16.1.111",
+        "§:github.com",
+        "https://www.mediawiki.org",
+        "§:duckduckgo.com",
+        "§:stackoverflow.com",
+        "§:ajax.googleapis.com",
+        "§:sstatic.net",
+        "§:hanselminutes.com",
+        "bsnlszprepaid.com",
+        "§:fast.com",
+        "§:wikimedia.org",
+        "tools.wmflabs.org",
+        "§:fsf.org",
+        "§:codesearch.wmflabs.org",
+        "§:mozilla.org",
+        "videograbby.com",
+        "§:git-scm.com",
+        "§:goodreads.com",
+        "§:apache.org",
+        "§:jquery.com",
+        "§:firefox.com",
+        "§:ted.com",
+        "§:tedcdn.com"
+      ],
+      "untrusted": [],
+      "custom": {
+        "https://www.allthingsgit.com/episodes/audio/allthingsgit-5-git_sprint_weekend.mp3": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "media"
+          ],
+          "temp": false
+        }
+      }
+    },
+    "enforced": true,
+    "autoAllowTop": false
+  },
+  "local": {
+    "debug": true,
+    "storage": "local",
+    "uuid": "2707e041-4f4e-4ec6-b8d5-391d99663218"
+  },
+  "sync": {
+    "global": false,
+    "xss": true,
+    "clearclick": true,
+    "storage": "sync"
+  }
+}
