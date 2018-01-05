@@ -1,6 +1,6 @@
 [submodule "bash"]
 	path = bash
-	url = /mnt/Source/bash/lxconf-bash/
+	url = https://github.com/sivaraam/lxconf-bash-unseen
 [submodule "ruby"]
 	path = lxconf-ruby
-	url = ../ruby/lxconf-ruby/
+	url = https://github.com/sivaraam/lxconf-ruby-unseen
