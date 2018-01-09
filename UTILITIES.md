@@ -12,6 +12,8 @@
 
 * seq - print a sequence of numbers
 
+* strace - trace system calls and signals
+
 File format converter
 ===
 * pandoc
