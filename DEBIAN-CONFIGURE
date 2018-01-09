@@ -1,35 +1,33 @@
 * Add user to the group 'sudo'
 
- $ addgroup sudo $USERNAME
+  $ addgroup sudo $USERNAME
 
 * Install Broadcom wifi module 
 
-1. Add to /etc/apt/sources.list & update
+  1. Add to /etc/apt/sources.list & update
 
-# Debian 9 "stretch"
-deb http://deb.debian.org/debian/ stretch main contrib non-free
+    # Debian 9 "stretch"
+    deb http://deb.debian.org/debian/ stretch main contrib non-free
 
-2. Install 'broadcom-sta-dkms' and 'wl'
+  2. Install 'broadcom-sta-dkms' and 'wl'
 
- $ apt-get install broadcom-sta-dkms wl
+     $ apt-get install broadcom-sta-dkms wl
 
-3. Load the module
+  3. Load the module
 
- $ modprobe -r wl && modprobe wl
+     $ modprobe -r wl && modprobe wl
 
 
 * Add sources to /etc/apt/sources.list
 
-deb  http://httpredir.debian.org/debian stretch main
-deb-src  http://httpredir.debian.org/debian stretch main
+  deb  http://httpredir.debian.org/debian stretch main
+  deb-src  http://httpredir.debian.org/debian stretch main
 
-deb  http://httpredir.debian.org/debian stretch-updates main
-deb-src  http://httpredir.debian.org/debian stretch-updates main
+  deb  http://httpredir.debian.org/debian stretch-updates main
+  deb-src  http://httpredir.debian.org/debian stretch-updates main
 
-deb http://security.debian.org/ stretch/updates main
-deb-src http://security.debian.org/ stretch/updates main
+  deb http://security.debian.org/ stretch/updates main
+  deb-src http://security.debian.org/ stretch/updates main
 
 
 * Configure Mount options of various partitions
-
-
