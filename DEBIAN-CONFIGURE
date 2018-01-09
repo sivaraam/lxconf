@@ -31,3 +31,23 @@
 
 
 * Configure Mount options of various partitions
+
+* In case the touchpad doesn't behave well in "X server" use 'synclient' to configure
+  the touchpad to suit your needs.
+
+  The 'synclient' cli tool is expected to be in the 'xserver-xorg-input-synaptics' or the
+  'xserver-xorg-input-libinput' package.
+
+  The typcial configuration to modify are,
+
+    - To enable tap to click,
+
+       TapButton1=1 # left mouse button on single tap
+       TapButton2=3 # right mouse button on double tap
+       TapButton3=3 # right mouse button on triple tap
+
+    - For natural scrolling
+
+       VertScrollDelta=-46
+
+   For up-to-date information refer to 'synclient-config'
