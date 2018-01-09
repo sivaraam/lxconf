@@ -12,7 +12,14 @@
 
 * seq - print a sequence of numbers
 
-
+File format converter
+===
+* pandoc
+    * [MD to] PDF conversion dependencies:
+        * texlive-latex-base -> pdflatex
+        * lmodern -> To avoid "LaTeX Error: File `lmodern.sty' not found." error
+        * texlive-fonts-recommended -> to avoid "Font T1/cmr/m/n/10=ecrm1000 at 10.0pt not loadable: Metric (TFM) file not found." error
+        * texlive-latex-recommended texlive-pictures texlive-latex-extra -> recommended for more styles also avoids "LaTeX Error: File `booktabs.sty' not found." error
 Audio & Video
 ===
 * ffmpeg - can be used to convert between different formats
