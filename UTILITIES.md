@@ -26,14 +26,14 @@
 
 * ffmpeg - can be used to convert between different formats
 
-  e.g., convert `*.wma` to `*.mp3`
+  e.g. To convert `*.wma`files  to `*.mp3`,
 
-```
+  ```
     for file in *.wma
     do
       ffmpeg -i "${file}"  -acodec libmp3lame -ab 192k "${file/.wma/.mp3}"
     done
-```
+   ```
 
 
 ## Device related
