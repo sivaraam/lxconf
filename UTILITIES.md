@@ -22,6 +22,24 @@
         * lmodern -> To avoid "LaTeX Error: File `lmodern.sty' not found." error
         * texlive-fonts-recommended -> to avoid "Font T1/cmr/m/n/10=ecrm1000 at 10.0pt not loadable: Metric (TFM) file not found." error
         * texlive-latex-recommended texlive-pictures texlive-latex-extra -> recommended for more styles also avoids "LaTeX Error: File `booktabs.sty' not found." error
+
+* convert - convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more
+  - can be used to lower quality of images in PDF
+
+    e.g., `convert -density 50x50 -quality 65 -compress jpeg input.pdf output.pdf`
+
+    Ref: https://askubuntu.com/q/113544
+
+* gs - Ghostscript (PostScript and PDF language interpreter and previewer)
+
+  - can be used to downsize a PDF
+
+    e.g., `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf`
+
+    Ref: https://askubuntu.com/q/113544
+
+* ps2pdf - Convert PostScript to PDF using ghostscript
+
 ## Audio & Video
 
 * ffmpeg - can be used to convert between different formats
