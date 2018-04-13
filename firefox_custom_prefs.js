@@ -1,4 +1,4 @@
-// General prefs
+// General firefox prefs
 // Probably to be updated in /etc/firefox/prefs.js
 // pref() or lockPref()
 
