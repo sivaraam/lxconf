@@ -61,16 +61,19 @@
 
 ## Device related
 
-* fdisk - manipulate disk partition table
-
-* hdparm - get/set SATA/IDE device parameters
-
 * lsblk - list block devices
 
 * lsusb - list USB devices
 
 * lspci - list all PCI devices
 
+#### Disk related
+
 * df - report filesystem disk space usage
+
+
+* fdisk - manipulate disk partition table
+
+* hdparm - get/set SATA/IDE device parameters
 
 * fsck - clean and repair a linux filesystem
