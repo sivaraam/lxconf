@@ -71,6 +71,9 @@
 
 * df - report filesystem disk space usage
 
+* du - estimate file space usage
+
+    Typical usage: du -hs path/to/directory
 
 * fdisk - manipulate disk partition table
 
