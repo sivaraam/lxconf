@@ -30,6 +30,12 @@
 
     Ref: https://askubuntu.com/q/113544
 
+  - can convert images to PDF
+
+    e.g., `convert $IMAGE $FILE.pdf`
+
+    Ref: https://askubuntu.com/a/246653/732512
+
 * gs - Ghostscript (PostScript and PDF language interpreter and previewer)
 
   - can be used to downsize a PDF
