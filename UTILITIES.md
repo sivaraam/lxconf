@@ -62,7 +62,7 @@
   e.g. To crop an audio file (without any transcoding),
 
   ```
-   ffmpeg -t ${time_upto_which_to_crop} -i ${input_file} -acodec copy ${output_file}
+   ffmpeg -ss ${start_time} -t ${time_duration_from_start} -i ${input_file} -acodec copy ${output_file}
   ```
 
 ## Device related
