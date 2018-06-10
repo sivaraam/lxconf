@@ -86,3 +86,11 @@
 * hdparm - get/set SATA/IDE device parameters
 
 * fsck - clean and repair a linux filesystem
+
+## Display
+
+* xrandr - primitive command line interface to RandR extension
+
+  It could be used to connect and configure a HDMI projector
+
+  Possible example: xrandr --output HDMI-0 --mode 1280x720 --right-of DVI-0
