@@ -36,6 +36,12 @@
 
     Ref: https://askubuntu.com/a/246653/732512
 
+  - can convert PDF file with images to TIFF format
+
+    e.g., `convert source.pdf dest.tiff`
+
+    Ref: https://stackoverflow.com/a/75567/5614968
+
 * gs - Ghostscript (PostScript and PDF language interpreter and previewer)
 
   - can be used to downsize a PDF
@@ -45,6 +51,14 @@
     Ref: https://askubuntu.com/q/113544
 
 * ps2pdf - Convert PostScript to PDF using ghostscript
+
+* qpdf - PDF transformation software
+
+  - Removing password protection from a PDF file
+
+    e.g., `qpdf --password="$PASS" --decrypt restricted-input.pdf unrestricted-output.pdf`
+
+  Ref: https://superuser.com/a/850972/563569
 
 ## Audio & Video
 
