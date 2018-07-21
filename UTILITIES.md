@@ -1,29 +1,29 @@
-* csplit - split a file into sections determined by context lines
+* `csplit` - split a file into sections determined by context lines
 
-* nl - number lines of files
+* `nl` - number lines of files
 
-* tac - concatenate and print files in reverse
+* `tac` - concatenate and print files in reverse
 
-* head - output the first part of files (tail - opposite)
+* `head` - output the first part of files (tail - opposite)
 
-* sort - sort lines of text files
+* `sort` - sort lines of text files
 
-* uniq - report or omit repeated lines
+* `uniq` - report or omit repeated lines
 
-* seq - print a sequence of numbers
+* `seq` - print a sequence of numbers
 
-* strace - trace system calls and signals
+* `strace` - trace system calls and signals
 
 ## File format converter
 
-* pandoc
+* `pandoc`
     * [MD to] PDF conversion dependencies:
         * texlive-latex-base -> pdflatex
         * lmodern -> To avoid "LaTeX Error: File `lmodern.sty' not found." error
         * texlive-fonts-recommended -> to avoid "Font T1/cmr/m/n/10=ecrm1000 at 10.0pt not loadable: Metric (TFM) file not found." error
         * texlive-latex-recommended texlive-pictures texlive-latex-extra -> recommended for more styles also avoids "LaTeX Error: File `booktabs.sty' not found." error
 
-* convert - convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more
+* `convert` - convert between image formats as well as resize an image, blur, crop, de-speckle, dither, draw on, flip, join, re-sample, and much more
   - can be used to lower quality of images in PDF
 
     e.g., `convert -density 50x50 -quality 65 -compress jpeg input.pdf output.pdf`
@@ -42,7 +42,7 @@
 
     Ref: https://stackoverflow.com/a/75567/5614968
 
-* gs - Ghostscript (PostScript and PDF language interpreter and previewer)
+* `gs` - Ghostscript (PostScript and PDF language interpreter and previewer)
 
   - can be used to downsize a PDF
 
@@ -50,9 +50,9 @@
 
     Ref: https://askubuntu.com/q/113544
 
-* ps2pdf - Convert PostScript to PDF using ghostscript
+* `ps2pdf` - Convert PostScript to PDF using `ghostscript`
 
-* qpdf - PDF transformation software
+* `qpdf` - PDF transformation software
 
   - Removing password protection from a PDF file
 
@@ -62,7 +62,7 @@
 
 ## Audio & Video
 
-* ffmpeg - can be used to convert between different formats
+* `ffmpeg` - can be used to convert between different formats
 
   e.g. To convert `*.wma`files  to `*.mp3`,
 
@@ -81,30 +81,30 @@
 
 ## Device related
 
-* lsblk - list block devices
+* `lsblk` - list block devices
 
-* lsusb - list USB devices
+* `lsusb` - list USB devices
 
-* lspci - list all PCI devices
+* `lspci` - list all PCI devices
 
 #### Disk related
 
-* df - report filesystem disk space usage
+* `df` - report file-system disk space usage
 
-* du - estimate file space usage
+* `du` - estimate file space usage
 
     Typical usage: du -hs path/to/directory
 
-* fdisk - manipulate disk partition table
+* `fdisk` - manipulate disk partition table
 
-* hdparm - get/set SATA/IDE device parameters
+* `hdparm` - get/set SATA/IDE device parameters
 
-* fsck - clean and repair a linux filesystem
+* `fsck` - clean and repair a linux file-system
 
 ## Display
 
-* xrandr - primitive command line interface to RandR extension
+* `xrandr` - primitive command line interface to RandR extension
 
   It could be used to connect and configure a HDMI projector
 
-  Possible example: xrandr --output HDMI-0 --mode 1280x720 --right-of DVI-0
+  Possible example: `xrandr --output HDMI-0 --mode 1280x720 --right-of DVI-0`
