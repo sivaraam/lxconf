@@ -108,3 +108,17 @@
   It could be used to connect and configure a HDMI projector
 
   Possible example: `xrandr --output HDMI-0 --mode 1280x720 --right-of DVI-0`
+
+## General Notes
+
+* `grep` turns off colouring when piping, if it detects the
+  destination is not a tty. To over come this use `--color=always`.
+  Defining an alias for this as `alias cgrep=grep --color=always`
+  would help.
+
+* Sometimes `less` might not recognize the special ASCII control
+  characters that were piped to it. This could be overcome by
+  passing the `-R` option.
+
+* Typically, if you want to page the coloured output of `grep` to
+  `less`. You would have to do `grep --color=alway ... | less -R`.
