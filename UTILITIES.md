@@ -116,9 +116,13 @@
   Defining an alias for this as `alias cgrep=grep --color=always`
   would help.
 
+  Ref: https://superuser.com/a/36045/563569
+
 * Sometimes `less` might not recognize the special ASCII control
   characters that were piped to it. This could be overcome by
   passing the `-R` option.
+
+  Ref: https://superuser.com/a/117842/563569
 
 * Typically, if you want to page the coloured output of `grep` to
   `less`. You would have to do `grep --color=alway ... | less -R`.
