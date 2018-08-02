@@ -126,3 +126,16 @@
 
 * Typically, if you want to page the coloured output of `grep` to
   `less`. You would have to do `grep --color=alway ... | less -R`.
+
+* The GNOME display manager (GDM3) might not work correctly after
+  upgrading to debian testing from debian current stable. In that case,
+  the following should be done to restore Gnome:
+
+  ```
+  apt --reinstall install gdm3
+  apt --reinstall install gnome
+  apt --reinstall install gnome-shell
+  dpkg-reconfigure gdm3
+  ```
+
+  Ref: https://wiki.debian.org/DebianTesting
