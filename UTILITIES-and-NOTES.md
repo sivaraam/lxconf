@@ -79,6 +79,17 @@
    ffmpeg -ss ${start_time} -t ${time_duration_from_start} -i ${input_file} -acodec copy ${output_file}
   ```
 
+  Examples:
+  1. To remove the first 5 seconds from an audio file:
+     ```
+     ffmpeg -ss 0:05 -i ${input_file} -acodec copy ${output_file}
+     ```
+
+  2. To remove the last five seconds from an audio file (5:23 seconds)
+     ```
+     ffmpeg -t 5:18 -i ${input_file} -acodec copy ${output_file}
+     ```
+
 ## Device related
 
 * `lsblk` - list block devices
