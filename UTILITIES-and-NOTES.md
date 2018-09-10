@@ -76,7 +76,19 @@
   e.g. To crop an audio file (without any transcoding),
 
   ```
-   ffmpeg -ss ${start_time} -t ${time_duration_from_start} -i ${input_file} -acodec copy ${output_file}
+    ffmpeg -ss ${start_time} -t ${time_duration_from_start} -i ${input_file} -acodec copy ${output_file}
+  ```
+
+  e.g. To merge a set of `.ts` files. Ref: https://superuser.com/a/693009/563569
+
+  ```
+    cat audio_1.ts audio_2.ts audio_3.ts >all.ts
+    ffmpeg -i all.ts -bsf:a aac_adtstoasc -acodec copy output.mp4
+  ```
+
+  To extract `.mp3` audio from `.mp4`. Ref: https://stackoverflow.com/a/36324719/5614968
+  ```
+    ffmpeg -i input.mp4 -vn -q:a 0 -map a output.mp3
   ```
 
   Examples:
