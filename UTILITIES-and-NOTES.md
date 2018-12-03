@@ -62,45 +62,46 @@
 
 ## Audio & Video
 
-* `ffmpeg` - can be used to convert between different formats
+* `ffmpeg` - can be used for a lot of things
 
-  e.g. To convert `*.wma`files  to `*.mp3`,
+  * To convert `*.wma`files  to `*.mp3`,
 
-  ```
+    ```
     for file in *.wma
     do
       ffmpeg -i "${file}"  -acodec libmp3lame -ab 192k "${file/.wma/.mp3}"
     done
-   ```
+    ```
 
-  e.g. To crop an audio file (without any transcoding),
+  * To crop an audio file (without any transcoding),
 
-  ```
+    ```
     ffmpeg -ss ${start_time} -t ${time_duration_from_start} -i ${input_file} -acodec copy ${output_file}
-  ```
+    ```
 
-  e.g. To merge a set of `.ts` files. Ref: https://superuser.com/a/693009/563569
+    Examples:
+    1. To remove the first 5 seconds from an audio file:
+       ```
+       ffmpeg -ss 0:05 -i ${input_file} -acodec copy ${output_file}
+       ```
 
-  ```
+    2. To remove the last five seconds from an audio file (5:23 seconds)
+       ```
+       ffmpeg -t 5:18 -i ${input_file} -acodec copy ${output_file}
+       ```
+
+  * To merge a set of `.ts` files. Ref: https://superuser.com/a/693009/563569
+
+    ```
     cat audio_1.ts audio_2.ts audio_3.ts >all.ts
     ffmpeg -i all.ts -bsf:a aac_adtstoasc -acodec copy output.mp4
-  ```
+    ```
 
-  To extract `.mp3` audio from `.mp4`. Ref: https://stackoverflow.com/a/36324719/5614968
-  ```
+  * To extract `.mp3` audio from `.mp4`. Ref: https://stackoverflow.com/a/36324719/5614968
+
+    ```
     ffmpeg -i input.mp4 -vn -q:a 0 -map a output.mp3
-  ```
-
-  Examples:
-  1. To remove the first 5 seconds from an audio file:
-     ```
-     ffmpeg -ss 0:05 -i ${input_file} -acodec copy ${output_file}
-     ```
-
-  2. To remove the last five seconds from an audio file (5:23 seconds)
-     ```
-     ffmpeg -t 5:18 -i ${input_file} -acodec copy ${output_file}
-     ```
+    ```
 
 ## Device related
 
