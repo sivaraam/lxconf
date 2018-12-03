@@ -103,6 +103,12 @@
     ffmpeg -i input.mp4 -vn -q:a 0 -map a output.mp3
     ```
 
+  * To reduce the size of a `.mp4` file without compromising quality. Ref: https://unix.stackexchange.com/a/38380/182996
+
+    ```
+    ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
+    ```
+
 ## Device related
 
 * `lsblk` - list block devices
