@@ -1,0 +1,8 @@
+1. To bring Wi-Fi, the following package should be installed: `bcmwl-kernel-source`
+   which is command:
+
+    ```
+    sudo apt install bcmwl-kernel-source
+    ```
+
+2. Volume control doesn't work. Refer to https://askubuntu.com/a/922795/732512
