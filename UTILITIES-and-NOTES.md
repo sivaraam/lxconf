@@ -155,7 +155,7 @@
   Ref: https://superuser.com/a/117842/563569
 
 * Typically, if you want to page the coloured output of `grep` to
-  `less`. You would have to do `grep --color=alway ... | less -R`.
+  `less`. You would have to do `grep --color=always ... | less -R`.
 
 * The GNOME display manager (GDM3) might not work correctly after
   upgrading to debian testing from debian current stable. In that case,
