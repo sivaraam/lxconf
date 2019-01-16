@@ -109,6 +109,25 @@
     ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
     ```
 
+  * To merge multiple `.mp4` files. Ref: https://stackoverflow.com/a/17487021/5614968
+
+    ```
+    # Create a text file (inputs.txt) with input file names. Each line
+    # having the following format:
+    #
+    #    file <mp4_file_name>
+    #
+    # Eg.
+    #
+    #    file input_1.mp4
+    #    file input_2.mp4
+    #    file input_3.mp4
+    #
+
+    # Then execute the following command
+    ffmpeg -f concat -i inputs.txt -vcodec copy -acodec copy concat_output.mp4
+    ```
+
 ## Device related
 
 * `lsblk` - list block devices
