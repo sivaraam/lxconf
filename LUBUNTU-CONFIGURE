@@ -6,3 +6,16 @@
     ```
 
 2. Volume control doesn't work. Refer to https://askubuntu.com/a/922795/732512
+
+3. If Bluetooth audio output device could be paired but not connected.
+
+   If you get the following error when trying to connect to a bluetooth audio output,
+   then install `pulseaudio-module-bluetooth` package as instructed in [1]
+
+        DBusFailedError: Protocol not available ...
+
+   Installation:
+
+        `sudo apt install pulseaudio-module-bluetooth`
+
+   [1]: https://github.com/blueman-project/blueman/issues/547#issuecomment-231644285
