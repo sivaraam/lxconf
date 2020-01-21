@@ -51,3 +51,24 @@
        VertScrollDelta=-46
 
    For up-to-date information refer to 'synclient-config'
+
+* Bluetooth discoverability issue
+
+  If no Bluetooth devices are detected and the following error is found
+  in the `dmesg` log, then continue reading to see how to fix it.
+
+        Bluetooth: hci1: BCM43142A
+        Bluetooth: hci1: BCM43142A (001.001.011) build 0000
+	bluetooth hci1: Direct firmware load for brcm/BCM.hcd failed with error -2
+
+  Copy the BCM.hcd file[1] in the root of this repository
+  to `/lib/firmware/brcm` and restart computer.
+
+        sudo cp BCM.hcd /lib/firmware/brcm
+        reboot
+
+  [1]: https://github.com/winterheart/broadcom-bt-firmware/blob/master/brcm/BCM43142A0-185f-2167.hcd
+
+  References:
+  * https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1743336
+  * https://github.com/winterheart/broadcom-bt-firmware
