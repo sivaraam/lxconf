@@ -89,6 +89,11 @@
        ```
        ffmpeg -t 5:18 -i ${input_file} -acodec copy ${output_file}
        ```
+  * To remove audio from video file. Ref: https://superuser.com/a/268986/563569
+
+    ```
+    ffmpeg -i ${input_file} -c copy -an ${output_file}
+    ```
 
   * To merge a set of `.ts` files. Ref: https://superuser.com/a/693009/563569
 
