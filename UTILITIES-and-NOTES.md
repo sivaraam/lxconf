@@ -50,6 +50,24 @@
 
     Ref: https://askubuntu.com/q/113544
 
+  - can be used to convert colour images in a PDF to black and white (b/w). The following script could be used for that:
+
+      ```shell
+	#!/bin/bash
+
+	gs \
+	 -sOutputFile=output.pdf \
+	 -sDEVICE=pdfwrite \
+	 -sColorConversionStrategy=Gray \
+	 -dProcessColorModel=/DeviceGray \
+	 -dCompatibilityLevel=1.4 \
+	 -dNOPAUSE \
+	 -dBATCH \
+	 $1
+      ```
+
+      Ref: https://unix.stackexchange.com/a/93971
+
 * `ps2pdf` - Convert PostScript to PDF using `ghostscript`
 
 * `qpdf` - PDF transformation software
