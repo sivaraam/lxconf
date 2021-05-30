@@ -211,3 +211,23 @@
   ```
 
   Ref: https://wiki.debian.org/DebianTesting
+
+# Windows
+## Batch image processing
+It looks like batch image porcessing could be achieved using [ImageMagick](https://www.imagemagick.org/script/download.php).
+
+PowerShell was used to iterate over multiple files. A useful resource
+that helped with this is https://stackoverflow.com/a/18848848/5614968
+
+The QA that helped with identifying how to crop images using ImageMagick
+is the following: https://stackoverflow.com/a/14825481/5614968
+
+A PowerShell snippet used to batch crop images in a directory:
+
+```powershell
+Get-ChildItem .\ |
+	ForEach-Object {
+		magick $_.FullName -crop +0+110 interim.jpg
+		magick .\interim.jpg -crop +0-30 ($_.BaseName + '_c.jpg')
+}
+```
