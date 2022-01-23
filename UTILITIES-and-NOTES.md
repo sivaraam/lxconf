@@ -212,6 +212,22 @@
 
   Ref: https://wiki.debian.org/DebianTesting
 
+## Git
+
+* Using filter-repo to change the e-mail address in commits:
+
+  ```
+  git filter-repo --email-callback "
+    return email if email != b'old@email.com' else b'new@email.com'
+    " --refs <committish>
+  ```
+  
+  Related resource: [Example in filter-repo](https://github.com/newren/git-filter-repo/blob/main/Documentation/converting-from-filter-branch.md#changing-authorcommittertagger-information)
+  
+  _Note_:
+  - This was tested on Windows PowerShell.
+  - Installation was easy as [filter-repo is a single-file Python script](https://github.com/newren/git-filter-repo#how-do-i-install-it). It only required placing filter-repo in PATH.
+
 # Windows
 ## Batch image processing
 It looks like batch image porcessing could be achieved using [ImageMagick](https://www.imagemagick.org/script/download.php).
