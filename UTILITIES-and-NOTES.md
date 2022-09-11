@@ -212,6 +212,10 @@
 
   Ref: https://wiki.debian.org/DebianTesting
 
+* Good guide to enable input through bluetooth microphone using pipewire
+  (pulseaudio alternative) on Ubuntu 20.04: https://askubuntu.com/a/1339908/732512
+
+
 ## Git
 
 * Using filter-repo to change the e-mail address in commits:
