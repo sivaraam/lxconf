@@ -159,13 +159,15 @@
 
 * `lspci` - list all PCI devices
 
-#### Disk related
+### Disk related
 
 * `df` - report file-system disk space usage
 
 * `du` - estimate file space usage
 
-    Typical usage: du -hs path/to/directory
+    Typical usage: `du -hs path/to/directory`
+
+    Quickly check sizes of directoreis in one level: `du -sh -- *` [ [Ref](https://unix.stackexchange.com/a/185777/182996) ]
 
 * `fdisk` - manipulate disk partition table
 
