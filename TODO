@@ -1,1 +1,27 @@
 ✓ Make a git hook for commit message
+
+- Need a setup framework that sets up
+  - Diff So Fancy
+  - autojump
+  - Clipboard manager
+  - Java and JAVA_HOME env variable
+  - npm
+
+- Tools
+  - OBS Studio for video editing https://obsproject.com/
+
+- Other useful tools
+  - VSCode
+  - DBeaver
+  - ImageMagick
+  - Some good video recorder
+  - Reminder for eye RSI prevention
+  - WordWeb
+  - VSCodium
+  - qBitTorrent
+
+Good Windows Software
+  - WinDirStat - Disk analysis tool
+  - Process Explorer
+  - WinSCP 
+  - WorkRave - eye RSI prevention software
