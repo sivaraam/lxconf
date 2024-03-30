@@ -234,7 +234,12 @@
   - This was tested on Windows PowerShell.
   - Installation was easy as [filter-repo is a single-file Python script](https://github.com/newren/git-filter-repo#how-do-i-install-it). It only required placing filter-repo in PATH.
 
+# Firefox
+
+- [password - How to setup Firefox and KeePassXC in a flatpak and get the KeePassXC-Browser add-on to work? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/584521/how-to-setup-firefox-and-keepassxc-in-a-flatpak-and-get-the-keepassxc-browser-ad)
+
 # Windows
+
 ## Batch image processing
 It looks like batch image porcessing could be achieved using [ImageMagick](https://www.imagemagick.org/script/download.php).
 
