@@ -77,6 +77,22 @@
 
   Ref: https://superuser.com/a/850972/563569
 
+* `pdftk` - Password protect a new PDF file
+
+    ```shell
+    pdftk input.pdf output output.pdf user_pw <password | PROMPT>
+    ```
+
+    Ref: https://unix.stackexchange.com/a/187405/182996
+
+* `zip` - Create a password protected ZIP file
+
+    ```shell
+    zip -r --encrypt output.zip input-files/
+    ```
+
+    Ref: https://askubuntu.com/a/17643/732512
+
 ## Audio & Video
 
 * `ffmpeg` - can be used for a lot of things
