@@ -53,17 +53,16 @@
   - can be used to convert colour images in a PDF to black and white (b/w). The following script could be used for that:
 
       ```shell
-	#!/bin/bash
-
-	gs \
-	 -sOutputFile=output.pdf \
-	 -sDEVICE=pdfwrite \
-	 -sColorConversionStrategy=Gray \
-	 -dProcessColorModel=/DeviceGray \
-	 -dCompatibilityLevel=1.4 \
-	 -dNOPAUSE \
-	 -dBATCH \
-	 $1
+      #!/bin/bash
+      gs \
+       -sOutputFile=output.pdf \
+       -sDEVICE=pdfwrite \
+       -sColorConversionStrategy=Gray \
+       -dProcessColorModel=/DeviceGray \
+       -dCompatibilityLevel=1.4 \
+       -dNOPAUSE \
+       -dBATCH \
+       $1
       ```
 
       Ref: https://unix.stackexchange.com/a/93971
