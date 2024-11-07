@@ -166,6 +166,18 @@
     ffmpeg -f concat -i inputs.txt -vcodec copy -acodec copy concat_output.mp4
     ```
 
+  * To cut a portion of the video in the middle without a concatenation. Ref: https://stackoverflow.com/a/65941529/5614968
+
+    ```
+    # In order to keep <start-15s> and <45s-end>, you need to 
+    # keep all the frames which are "not between 15s and 45s":
+
+    ffmpeg -i input.mp4 \
+      -vf  "select='not(between(t,15,45))',  setpts=N/FRAME_RATE/TB" \
+      -af "aselect='not(between(t,15,45))', asetpts=N/SR/TB" \
+      output.mp4
+    ```
+
 ## Device related
 
 * `lsblk` - list block devices
