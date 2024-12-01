@@ -178,6 +178,11 @@
       output.mp4
     ```
 
+* [Noise suppression LADSPA plugin - CLI](https://github.com/IniasP/rnnoise-cli?tab=readme-ov-file)
+
+  * This is said to help with trimming the noise from the microphone and thus
+    help with better microphone quality.
+
 ## Device related
 
 * `lsblk` - list block devices
